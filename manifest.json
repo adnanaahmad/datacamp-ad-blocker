@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Simple Ad Blocker",
+    "version": "1.0",
+    "description": "Removes element with specific ID",
+    "content_scripts": [
+        {
+        "matches": ["https://campus.datacamp.com/*"],
+        "js": ["content.js"]
+        }
+    ],
+    "permissions": ["activeTab"]
+}
